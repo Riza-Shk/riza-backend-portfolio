@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101713" />
+    <meta
+      name="description"
+      content="Riza Shaikh — student focused on Java backend development."
+    />
+    <title>Riza Shaikh — Java Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="header">
+      <a class="logo" href="#home" aria-label="Riza Shaikh home"
+        >riza <span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="Open navigation"
+      >
+        <i></i><i></i>
+      </button>
+      <nav id="nav" aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#experience">Experience</a
+        ><a href="#about">About</a><a href="#stack">Stack</a
+        ><a href="#education">Education</a
+        ><a href="#certifications">Certifications</a
+        ><a class="nav-cta" href="#contact">Let’s talk <b>↗</b></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <i class="dot"></i> COMPUTER SCIENCE STUDENT · INDIA
+          </p>
+          <h1>Building the<br />logic <em>behind</em><br />the experience.</h1>
+          <p class="hero-intro">
+            I’m Riza Shaikh, learning to build dependable backend systems with
+            Java. I care about clear APIs, thoughtful data flow, and the details
+            that make software feel effortless.
+          </p>
+          <div class="actions">
+            <a class="button" href="#work">Explore my work <b>↓</b></a
+            ><a class="underlink" href="#about">A little about me <b>↗</b></a>
+          </div>
+        </div>
+        <div
+          class="architecture"
+          aria-label="Illustration showing a request moving through an API, Java logic, and database"
+        >
+          <div class="panel-top">
+            <span>REQUEST FLOW / 001</span
+            ><span class="online"><i></i> SYSTEM ONLINE</span>
+          </div>
+          <div class="diagram">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="flow-caption">INCOMING REQUEST <b>→</b></div>
+            <div class="connector"></div>
+            <div class="node api">
+              <small>01 / ENTRY <b>↗</b></small
+              ><strong>REST API</strong><label>Spring Boot</label>
+            </div>
+            <div class="fork"><i></i><i></i></div>
+            <div class="node-row">
+              <div class="node">
+                <small>02 / LOGIC <b>{ }</b></small
+                ><strong>Java</strong><label>Business rules</label>
+              </div>
+              <div class="node">
+                <small>03 / STORAGE <b>▤</b></small
+                ><strong>Database</strong><label>Structured data</label>
+              </div>
+            </div>
+            <div class="flow-caption response"><b>←</b> USEFUL RESPONSE</div>
+          </div>
+          <div class="panel-bottom">
+            <span>DESIGNED FOR CLARITY</span><span>JAVA · API · DATA</span>
+          </div>
+          <span class="figure">FIG. 01</span>
+        </div>
+        <div class="hero-footer">
+          <span>CURIOUS BY DEFAULT</span><a href="#work">SCROLL TO EXPLORE ↓</a
+          ><span>PUNE, INDIA</span>
+        </div>
+      </section>
+      <section class="manifesto">
+        <div class="wrap">
+          <p class="eyebrow">THE INTEREST</p>
+          <p>
+            Good software feels simple on the surface because someone cared
+            about <em>what’s underneath.</em>
+          </p>
+          <span class="asterisk">✳</span>
+        </div>
+      </section>
+      <section class="work wrap" id="work">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2>Things I’m <em>building.</em></h2>
+          </div>
+          <p>
+            One project, built from document ingestion through semantic
+            retrieval and grounded answers. Explore its screenshots, test
+            document, and implementation notes.
+          </p>
+        </div>
+        <div class="projects">
+          <article class="project featured">
+            <a
+              class="project-art art-dashboard"
+              href="ai-semantic-search.html"
+              aria-label="Open the AI Semantic Search and Caching Engine case study"
+              ><span class="art-label">AI SEMANTIC SEARCH · JAVA</span>
+              <div class="dashboard">
+                <div class="dash-head">
+                  <i></i><i></i><i></i><span>service / overview</span>
+                </div>
+                <div class="dash-body">
+                  <small>DOCUMENT WORKFLOW</small><strong>PDF → RAG</strong>
+                  <div class="bars">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                    ><i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="dash-line"></div>
+                </div>
+              </div>
+              <b class="art-arrow">↗</b></a
+            >
+            <div class="project-info">
+              <div>
+                <small
+                  >JAVA · SPRING BOOT · POSTGRESQL · PGVECTOR · REDIS · SPRING
+                  AI · GEMINI</small
+                >
+                <h3>AI Semantic Search &amp; Caching Engine</h3>
+                <p>
+                  Ingests research PDFs, creates Gemini embeddings, and uses
+                  PostgreSQL with pgvector for meaning-based retrieval. Spring
+                  AI generates grounded answers with source citations;
+                  Redis-based semantic caching is an ongoing part of the build;
+                  Docker supports a reproducible local environment.
+                </p>
+                <p class="project-result">
+                  On a five-question evaluation set, RAG answered all five
+                  correctly. After tuning chunks to 500 tokens, the correct
+                  semantic result ranked first on 4/5 questions.
+                </p>
+                <a class="project-link" href="ai-semantic-search.html"
+                  >VIEW PROJECT CASE STUDY ↗</a
+                >
+              </div>
+              <span>01</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="experience-inner wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">02 / EXPERIENCE</p>
+              <h2>Early steps. <em>Real work.</em></h2>
+            </div>
+            <p>
+              Freelance client work, a virtual internship, and ongoing community
+              teaching alongside my studies.
+            </p>
+          </div>
+          <div class="experience-list">
+            <article class="experience-row">
+              <p class="experience-date">FEB 2026 — MAR 2026 · 1 MONTH</p>
+              <div class="experience-role">
+                <h3>Web Development Intern</h3>
+                <span>CodSoft · Virtual</span>
+              </div>
+              <p>
+                Completed web-development tasks in HTML, CSS, JavaScript, and
+                responsive design. Built an Online Quiz Maker with Node.js,
+                Express.js, and MongoDB, and applied frontend, backend, and REST
+                API concepts.
+              </p>
+            </article>
+            <article class="experience-row">
+              <p class="experience-date">SEP 2024 — PRESENT</p>
+              <div class="experience-role">
+                <h3>Volunteer Teacher</h3>
+                <span>Bhumi · Pune · Volunteer</span>
+              </div>
+              <p>Volunteer teaching sessions for children living in shelter homes every Sunday, supporting learners from LKG through Standard 4.</p>
+            </article>
+            <article class="experience-row">
+              <p class="experience-date">DEC 2024 — MAR 2026</p>
+              <div class="experience-role">
+                <h3>Freelance Animator</h3>
+                <span>Fiverr · Remote</span>
+              </div>
+              <p>
+                Delivered animation work for 10+ international clients,
+                including motion graphics, UI/UX animations, and posters. Met
+                deadlines and earned repeat orders through reliable client
+                communication.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-inner wrap">
+          <div class="stamp">
+            <small>ALWAYS</small><b>IN<br />PROGRESS</b><i>✳</i>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">03 / A BIT ABOUT ME</p>
+            <h2>Learning the craft.<br /><em>One system at a time.</em></h2>
+            <p>
+              I’m a student with a growing interest in backend engineering. I
+              enjoy understanding how a request travels through an application,
+              how data stays useful, and how small decisions add up to a
+              reliable system.
+            </p>
+            <p>
+              This portfolio is a work in progress too. I’m using it to document
+              what I make, what I’m learning, and where I’d like to grow next.
+            </p>
+            <p>
+              Outside technology, I enjoy painting, reading, and cooking. I am
+              especially passionate about painting and traveling.
+            </p>
+            <a class="underlink" href="#contact">Say hello <b>↗</b></a>
+          </div>
+          <div class="side-note">
+            STAY CURIOUS<br />KEEP SHIPPING<br />WRITE IT DOWN
+          </div>
+        </div>
+      </section>
+      <section class="stack wrap" id="stack">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / CURRENT FOCUS</p>
+            <h2>Tools of the <em>trade.</em></h2>
+          </div>
+          <p>
+            A starting point for the skills you’re learning. Update this list to
+            match your experience.
+          </p>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-note">
+            <b>{ }</b>
+            <h3>Backend first.<br />Always learning.</h3>
+            <p>Foundations in progress, one project and concept at a time.</p>
+          </div>
+          <div class="stack-list">
+            <div class="stack-row">
+              <small>01</small>
+              <div>
+                <b>Language</b>
+                <p>Java</p>
+              </div>
+              <label>FOCUS</label>
+            </div>
+            <div class="stack-row">
+              <small>02</small>
+              <div>
+                <b>Framework</b>
+                <p>Spring Boot</p>
+              </div>
+              <label>LEARNING</label>
+            </div>
+            <div class="stack-row">
+              <small>03</small>
+              <div>
+                <b>Interfaces</b>
+                <p>REST APIs · HTTP</p>
+              </div>
+              <label>EXPLORING</label>
+            </div>
+            <div class="stack-row">
+              <small>04</small>
+              <div>
+                <b>Data</b>
+                <p>PostgreSQL · pgvector · SQL</p>
+              </div>
+              <label>EXPLORING</label>
+            </div>
+            <div class="stack-row">
+              <small>05</small>
+              <div>
+                <b>Infrastructure</b>
+                <p>Docker · Redis · Git</p>
+              </div>
+              <label>GROWING</label>
+            </div>
+            <div class="stack-row">
+              <small>06</small>
+              <div>
+                <b>AI &amp; retrieval</b>
+                <p>Spring AI · Gemini Embeddings</p>
+              </div>
+              <label>BUILDING</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="education-inner wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">05 / EDUCATION</p>
+              <h2>Learning <em>by design.</em></h2>
+            </div>
+            <p>
+              Building strong foundations for a future in software engineering.
+            </p>
+          </div>
+          <div class="education-list">
+            <article class="education-card">
+              <div class="education-marker"><span>01</span><i></i></div>
+              <div class="education-detail">
+                <p class="education-period">2023 — EXPECTED MAY / JUNE 2027</p>
+                <h3>Bachelor of Engineering in Computer Engineering</h3>
+                <p class="education-school">
+                  Sinhgad Academy of Engineering, Pune · Savitribai Phule Pune
+                  University (SPPU)
+                </p>
+                <div class="education-facts">
+                  <div><span>STATUS</span><b>Pursuing</b></div>
+                  <div><span>CURRENT AGGREGATE CGPA</span><b>8.0</b></div>
+                </div>
+              </div>
+              <span class="education-glyph" aria-hidden="true">✳</span>
+            </article>
+            <article class="education-card">
+              <div class="education-marker"><span>02</span><i></i></div>
+              <div class="education-detail">
+                <p class="education-period">2021 — 2023 · CLASS XII</p>
+                <h3>Higher Secondary · PCM</h3>
+                <p class="education-school">Poona College, Pune</p>
+                <div class="education-facts">
+                  <div><span>RESULT</span><b>70%</b></div>
+                  <div>
+                    <span>STREAM</span><b>Physics · Chemistry · Mathematics</b>
+                  </div>
+                </div>
+              </div>
+              <span class="education-glyph" aria-hidden="true">✳</span>
+            </article>
+            <article class="education-card">
+              <div class="education-marker"><span>03</span><i></i></div>
+              <div class="education-detail">
+                <p class="education-period">2020 — 2021 · CLASS X / CBSE</p>
+                <h3>Class X · CBSE</h3>
+                <p class="education-school">City International School, Pune</p>
+                <div class="education-facts">
+                  <div><span>YEAR</span><b>2020 — 2021</b></div>
+                  <div><span>RESULT</span><b>73%</b></div>
+                </div>
+              </div>
+              <span class="education-glyph" aria-hidden="true">✳</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="certifications" id="certifications">
+        <div class="cert-inner wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">06 / CERTIFICATIONS</p>
+              <h2>Keep learning. <em>Keep building.</em></h2>
+            </div>
+            <p>
+              Courses completed across product management, web development, and
+              visual design.
+            </p>
+          </div>
+          <div class="cert-list">
+            <article class="cert-card">
+              <div class="cert-logo">
+                <img
+                  src="assets/certifications/logos/masai.png"
+                  alt="Masai logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-info">
+                <p class="cert-meta">
+                  iHUB DIVYASAMPARK · IIT ROORKEE · 23 AUG 2026
+                </p>
+                <h3>Future-Ready Product Management with Applied AI Program</h3>
+                <p>
+                  Instructor-led online certificate course · 18 Nov 2025 – 23
+                  Aug 2026 · Certificate ID: MISTH-FRPM261176
+                </p>
+              </div>
+              <a
+                class="cert-link"
+                href="assets/certifications/future-ready-product-management-applied-ai.pdf"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW CERTIFICATE <span>↗</span></a
+              >
+            </article>
+            <article class="cert-card">
+              <div class="cert-logo">
+                <img
+                  src="assets/certifications/logos/udemy-com-logo.png"
+                  alt="Udemy logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-info">
+                <p class="cert-meta">UDEMY · COMPLETED 16 MAR 2026</p>
+                <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+                <p>
+                  Instructor: Dr. Angela Yu · 62 total hours · Certificate ID:
+                  UC-ff64df5b-f985-4f9e-b332-46bd37606ef5
+                </p>
+              </div>
+              <a
+                class="cert-link"
+                href="https://ude.my/UC-ff64df5b-f985-4f9e-b332-46bd37606ef5"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW CERTIFICATE <span>↗</span></a
+              >
+            </article>
+            <article class="cert-card">
+              <div class="cert-logo">
+                <img
+                  src="assets/certifications/logos/photoshop.png"
+                  alt="Adobe Photoshop Ps logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-info">
+                <p class="cert-meta">UDEMY · COMPLETED 15 JAN 2025</p>
+                <h3>Adobe Photoshop CC — Essentials Training Course</h3>
+                <p>
+                  Instructor: Daniel Walter Scott · 11.5 total hours ·
+                  Certificate ID: UC-dae249db-6280-4bca-8e66-619955f173d7
+                </p>
+              </div>
+              <a
+                class="cert-link"
+                href="https://ude.my/UC-dae249db-6280-4bca-8e66-619955f173d7"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW CERTIFICATE <span>↗</span></a
+              >
+            </article>
+                      <article class="cert-card">
+              <div class="cert-logo">
+                <img src="assets/certifications/logos/deloitte.png" alt="Deloitte logo" loading="lazy" />
+              </div>
+              <div class="cert-info">
+                <p class="cert-meta">DELOITTE · ISSUED BY FORAGE · 29 JUN 2025</p>
+                <h3>Data Analytics Job Simulation</h3>
+                <p>Completed practical tasks in data analysis and forensic technology. Certificate of completion issued through Forage.</p>
+              </div>
+              <a class="cert-link" href="assets/certifications/deloitte-data-analytics-job-simulation.pdf" target="_blank" rel="noreferrer">VIEW CERTIFICATE <span>↗</span></a>
+            </article>
+            <article class="cert-card">
+              <div class="cert-logo">
+                <img src="assets/certifications/logos/hewlett-packard.png" alt="Hewlett-Packard logo" loading="lazy" />
+              </div>
+              <div class="cert-info">
+                <p class="cert-meta">HP LIFE · STARTED &amp; COMPLETED 28 JUN 2025</p>
+                <h3>AI for Beginners</h3>
+                <p>Covered core AI concepts, business applications, the role of data, and ethical considerations. Certificate serial: 3e5c9c6f-9ed0-4806-8e0a-a53805eb0a03</p>
+              </div>
+              <a class="cert-link" href="assets/certifications/hp-life-ai-for-beginners.pdf" target="_blank" rel="noreferrer">VIEW CERTIFICATE <span>↗</span></a>
+            </article></div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-inner wrap">
+          <p class="eyebrow">07 / OPEN TO OPPORTUNITY</p>
+          <h2>Let’s build<br />something <em>useful.</em></h2>
+          <p>
+            Looking for a curious learner for an internship, collaboration, or a
+            conversation about backend development? I’d love to hear from you.
+          </p>
+          <a class="email" href="mailto:riza.shaikh1000@gmail.com"
+            >riza.shaikh1000@gmail.com <b>↗</b></a
+          >
+          <div class="contact-methods">
+            <div class="phone-line">
+              <span>PHONE</span><a href="tel:+918999619023">+91 89996 19023</a>
+            </div>
+            <div class="contact-links">
+              <a
+                href="https://www.instagram.com/ieatmashpoteto/"
+                target="_blank"
+                rel="noreferrer"
+                ><b>IG</b> Instagram <span>↗</span></a
+              ><a
+                href="https://wa.me/918999619023"
+                target="_blank"
+                rel="noreferrer"
+                ><b>WA</b> WhatsApp <span>↗</span></a
+              ><a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noreferrer"
+                ><b>GH</b> GitHub <span>↗</span></a
+              ><a
+                href="https://www.linkedin.com/in/rizashaikh2005"
+                target="_blank"
+                rel="noreferrer"
+                ><b>IN</b> LinkedIn <span>↗</span></a
+              >
+            </div>
+          </div>
+          <span class="contact-star">✳</span>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <a class="logo" href="#home">riza<span>.</span></a>
+      <p>Made with curiosity and a lot of coffee.</p>
+      <div>
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noreferrer"
+          >GitHub ↗</a
+        ><a
+          href="https://www.linkedin.com/in/rizashaikh2005"
+          target="_blank"
+          rel="noreferrer"
+          >LinkedIn ↗</a
+        >
+      </div>
+      <small>© <span id="year"></span> RIZA SHAIKH</small>
+    </footer>
+  </body>
+</html>
+
+
+
